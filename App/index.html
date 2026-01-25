@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgar Alexandre | Software Developer</title>
+    <link rel="icon" type="image/png" href="./../src/icon/favicon.png">
+    <link rel="apple-touch-icon" href="./../src/icon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <div class="loader-stats">
+                <span id="load-status">SYSTEM_INITIALIZE...</span>
+                <span id="load-perc">0%</span>
+            </div>
+            <div class="progress-bar"><div id="progress-fill"></div></div>
+        </div>
+    </div>
+
+    <div id="page-content">
+        <canvas id="canvas-dots"></canvas>
+        
+        <main class="hero">
+            <div class="content-wrapper">
+                <div class="hero-card">
+                    <div class="image-container">
+                        <img class="hero-image" src="./../src/image/computador.png" alt="Tech Visual"/>
+                        <div class="glow-effect"></div>
+                    </div>
+                    <div class="text-content">
+                        <h1 class="glitch" data-text="EDGAR">EDGAR <span class="highlight">ALEXANDRE</span></h1>
+                        <div class="description">
+                            <span class="typewriter">Software Developer // Creative Technologist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="menu.html" class="menu-trigger" aria-label="Menu">
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+        </main>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

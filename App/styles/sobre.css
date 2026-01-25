@@ -1,0 +1,161 @@
+:root {
+    --bg-dark: #050505;
+    --accent: #00f2ff;
+    --glass: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background: var(--bg-dark);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#canvas-dots {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sobre-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    min-height: 100vh;
+}
+
+/* Cards Estilizados */
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.glass-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
+}
+
+/* Coluna Bio */
+.profile-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.3);
+}
+
+.profile-card h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.profile-card span { color: var(--accent); }
+
+.tagline {
+    font-family: 'JetBrains Mono', monospace;
+    color: #8892b0;
+    font-size: 0.9rem;
+}
+
+/* Grid de Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-category h4 {
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: #ccd6f6;
+}
+
+.accent { color: var(--accent); }
+
+/* Listas Customizadas */
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.custom-list span {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* Menu Trigger (Mesmo das outras páginas) */
+.menu-trigger {
+    position: fixed;
+    top: 40px; right: 40px;
+    width: 60px; height: 60px;
+    border: 1px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background: var(--bg-dark);
+}
+
+.line {
+    width: 30px; height: 2px;
+    background: var(--accent);
+    margin: 4px;
+}
+
+/* Loader (Padronizado) */
+#loader-wrapper {
+    position: fixed; inset: 0;
+    background: #0a0a0a;
+    display: flex; justify-content: center; align-items: center;
+    z-index: 9999;
+}
+
+#page-content { opacity: 0; transition: 1.5s; }
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .sobre-container { grid-template-columns: 1fr; }
+    .profile-img { width: 150px; height: 150px; }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Edgar Alexandre</title>
+    <link rel="icon" type="image/png" href="./../src/icon/favicon.png">
+    <link rel="apple-touch-icon" href="./../src/icon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/sobre.css">
+</head>
+<body>
+
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <div class="loader-stats">
+                <span id="load-status">FETCHING_BIO_DATA...</span>
+                <span id="load-perc">0%</span>
+            </div>
+            <div class="progress-bar"><div id="progress-fill"></div></div>
+        </div>
+    </div>
+
+    <div id="page-content">
+        <canvas id="canvas-dots"></canvas>
+        
+        <main class="sobre-container">
+            <section class="bio-section">
+                <div class="profile-card">
+                    <img class="profile-img" src="./../src/image/foto01.jpg" alt="Edgar"/>
+                    <h1 class="glitch">EDGAR <span>ALEXANDRE</span></h1>
+                    <p class="tagline">Software Developer // Problem Solver</p>
+                </div>
+                <div class="glass-card bio-text">
+                    <p>👋 Olá! Sou Desenvolvedor de Software com foco em resolver problemas com soluções tecnológicas. Tenho forte interesse em criar aplicações bem estruturadas, funcionais e com excelente experiência do utilizador.</p>
+                </div>
+            </section>
+
+            <section class="skills-section">
+                <div class="glass-card">
+                    <h2><span class="accent">></span> Stack Tecnológica</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>📱 Mobile</h4>
+                            <ul><li>React Native</li><li>Flutter</li></ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>🌐 Web</h4>
+                            <ul><li>React.js</li><li>HTML/CSS</li></ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>🧠 Backend</h4>
+                            <ul><li>Node.js</li><li>ASP.NET</li></ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>🗄️ Database</h4>
+                            <ul><li>PostgreSQL</li><li>MySQL</li></ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>🧩 Languages</h4>
+                            <p>JS, TS, HTML, CSS, C#, Dart, GDScript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card about-me">
+                    <h2><span class="accent">></span> Soft Skills & Foco</h2>
+                    <ul class="custom-list">
+                        <li><span>✔</span> Aprendizado contínuo e rápido</li>
+                        <li><span>✔</span> Experiência com apresentações públicas</li>
+                        <li><span>✔</span> Foco em Mobile e Backend</li>
+                        <li><span>✔</span> Disciplina e organização</li>
+                        <li><span>✔</span> Trabalho em equipa</li>
+                        <li><span>✔</span> Orientação para metas</li>
+                        <li><span>✔</span> Foco em resultados</li>
+                    </ul>
+                </div>
+            </section>
+
+            <a href="menu.html" class="menu-trigger" aria-label="Menu">
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+        </main>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
