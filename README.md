@@ -43,19 +43,10 @@ Este projeto demonstra competências técnicas em:
 <table border="0">
   <tr>
     <td>
-      <img src="https://github.com/seu-usuario.png" width="100px;" style="border-radius: 50%;" alt="Foto Edgar Alexandre"/>
-    </td>
-    <td>
       <strong>Edgar Alexandre</strong><br>
       Software Developer @ Luanda, Angola<br>
       Especialista em Soluções Mobile & Backend
     </td>
   </tr>
 </table>
-
-<div align="left">
-  <a href="https://linkedin.com/in/seu-user" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="mailto:seu-email@gmail.com"><img src="https://img.shields.io/badge/-Email-%23D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
-</div>
-
 ---
