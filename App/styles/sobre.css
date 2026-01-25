@@ -144,16 +144,6 @@ body {
     margin: 4px;
 }
 
-/* Loader (Padronizado) */
-#loader-wrapper {
-    position: fixed; inset: 0;
-    background: #0a0a0a;
-    display: flex; justify-content: center; align-items: center;
-    z-index: 9999;
-}
-
-#page-content { opacity: 0; transition: 1.5s; }
-
 /* Responsividade */
 @media (max-width: 900px) {
     .sobre-container { grid-template-columns: 1fr; }
