@@ -34,7 +34,6 @@ class Particle {
         if (this.y > canvas.height) this.y = 0;
         if (this.y < 0) this.y = canvas.height;
 
-        // Interação com mouse
         let dx = mouse.x - this.x;
         let dy = mouse.y - this.y;
         let distance = Math.sqrt(dx * dx + dy * dy);
@@ -94,7 +93,6 @@ function animate() {
 init();
 animate();
 
-// Lógica do Loader
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader-wrapper');
     const content = document.getElementById('page-content');

@@ -57,7 +57,7 @@ body {
 
 .project-info { padding: 25px; }
 .project-info h3 { margin: 0 0 10px; color: var(--accent); }
-.project-info p { font-size: 0.9rem; color: #ccd6f6; line-height: 1.6; height: 60px; }
+.project-info p { font-size: 0.7rem; color: #ccd6f6; line-height: 1.6; height: 65px; }
 
 .tech-stack { margin: 15px 0; display: flex; gap: 10px; flex-wrap: wrap; }
 .tech-stack span {
