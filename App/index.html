@@ -3,51 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edgar Alexandre | Software Developer</title>
-    <link rel="icon" type="image/png" href="./../src/icon/favicon.png">
-    <link rel="apple-touch-icon" href="./../src/icon/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Edgar Alexandre | Software Engineer</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <canvas id="canvas-dots"></canvas>
 
-    <div id="loader-wrapper">
-        <div class="loader-content">
-            <div class="spinner"></div>
-            <div class="loader-stats">
-                <span id="load-status">SYSTEM_INITIALIZE...</span>
-                <span id="load-perc">0%</span>
-            </div>
-            <div class="progress-bar"><div id="progress-fill"></div></div>
-        </div>
-    </div>
+    <nav class="navbar">
+        <div class="logo">EDGAR<span>ALEXANDRE</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+        </ul>
+    </nav>
 
-    <div id="page-content">
-        <canvas id="canvas-dots"></canvas>
-        
-        <main class="hero">
-            <div class="content-wrapper">
-                <div class="hero-card">
-                    <div class="image-container">
-                        <img class="hero-image" src="./../src/image/computador.png" alt="Tech Visual"/>
-                        <div class="glow-effect"></div>
-                    </div>
-                    <div class="text-content">
-                        <h1 class="glitch" data-text="EDGAR">EDGAR <span class="highlight">ALEXANDRE</span></h1>
-                        <div class="description">
-                            <span class="typewriter">Software Developer // Creative Technologist</span>
-                        </div>
-                    </div>
+    <header style="height: 100vh; display: flex; align-items: center;">
+        <div class="container">
+            <div class="reveal active">
+                <p style="font-family: 'JetBrains Mono'; color: var(--accent); margin-bottom: 15px;">// FULL-STACK DEVELOPER</p>
+                <h1 style="font-size: clamp(3.5rem, 10vw, 7rem); font-weight: 900; line-height: 0.9; letter-spacing: -4px; margin-bottom: 30px;">
+                    CRIANDO O <br><span style="color: var(--accent); text-shadow: 0 0 30px var(--accent-dim);">AMANHÃ.</span>
+                </h1>
+                <p style="max-width: 550px; color: var(--text-dim); font-size: 1.1rem; margin-bottom: 40px;">
+                    Especialista em arquiteturas escaláveis com Node.js e React Native. 
+                    Transformando ideias em produtos digitais de alta performance e impacto real.
+                </p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="projetos.html" style="background: var(--accent); color: #000; padding: 18px 40px; border-radius: 4px; text-decoration: none; font-weight: 900; font-size: 0.9rem;">VER PROJETOS</a>
+                    <a href="sobre.html" style="border: 1px solid var(--border); color: #fff; padding: 18px 40px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 0.9rem;">SAIBA MAIS</a>
                 </div>
             </div>
+        </div>
+    </header>
 
-            <a href="menu.html" class="menu-trigger" aria-label="Menu">
-                <span class="line"></span>
-                <span class="line"></span>
-            </a>
-        </main>
-    </div>
-
-    <script src="./scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

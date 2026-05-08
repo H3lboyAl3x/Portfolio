@@ -4,75 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre | Edgar Alexandre</title>
-    <link rel="icon" type="image/png" href="./../src/icon/favicon.png">
-    <link rel="apple-touch-icon" href="./../src/icon/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/sobre.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .about-section { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; margin-bottom: 100px; }
+        .glass-card { background: var(--card-bg); border: 1px solid var(--border); padding: 50px; border-radius: 12px; backdrop-filter: blur(10px); }
+        .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; }
+    </style>
 </head>
 <body>
-    <div id="page-content">
-        <canvas id="canvas-dots"></canvas>
-        
-        <main class="sobre-container">
-            <section class="bio-section">
-                <div class="profile-card">
-                    <img class="profile-img" src="./../src/image/foto01.jpg" alt="Edgar"/>
-                    <h1 class="glitch">EDGAR <span>ALEXANDRE</span></h1>
-                    <p class="tagline">Software Developer // Problem Solver</p>
-                </div>
-                <div class="glass-card bio-text">
-                    <p>👋 Olá! Sou Desenvolvedor de Software com foco em resolver problemas com soluções tecnológicas. Tenho forte interesse em criar aplicações bem estruturadas, funcionais e com excelente experiência do utilizador.</p>
-                </div>
-            </section>
+    <canvas id="canvas-dots"></canvas>
+    
+    <nav class="navbar">
+        <div class="logo">EDGAR<span>ALEXANDRE</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+        </ul>
+    </nav>
 
-            <section class="skills-section">
+    <main class="container" style="padding-top: 180px;">
+        <section class="about-section reveal">
+            <h2 style="font-size: 4rem; font-weight: 900; margin-bottom: 30px; letter-spacing: -2px;">VISÃO <span style="color: var(--accent);">PROFISSIONAL.</span></h2>
+            <div class="glass-card">
+                <p style="font-size: 1.4rem; color: var(--text-dim); font-weight: 300;">
+                    Com base sólida em engenharia de software, foco no desenvolvimento de soluções que unam <b style="color: #fff;">performance bruta</b> com <b style="color: #fff;">interfaces intuitivas</b>. Acredito que o código deve ser limpo, escalável e acima de tudo, útil para o utilizador final.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section reveal">
+            <h2 style="font-size: 3rem; font-weight: 900; margin-bottom: 30px;">METAS AO <span style="color: var(--accent);">ALCANÇAR.</span></h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
                 <div class="glass-card">
-                    <h2><span class="accent">></span> Stack Tecnológica</h2>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>📱 Mobile</h4>
-                            <ul><li>React Native</li><li>Flutter</li></ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>🌐 Web</h4>
-                            <ul><li>React.js</li><li>HTML/CSS</li></ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>🧠 Backend</h4>
-                            <ul><li>Node.js</li><li>ASP.NET</li></ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>🗄️ Database</h4>
-                            <ul><li>PostgreSQL</li><li>MySQL</li></ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>🧩 Languages</h4>
-                            <p>JS, TS, HTML, CSS, C#, Dart, GDScript</p>
-                        </div>
-                    </div>
+                    <h3 style="color: var(--accent); margin-bottom: 15px;">Curto Prazo</h3>
+                    <p>- Expandir o ecossistema <b>MindCare</b> em Angola e consolidar a stack TypeScript/Node como padrão de alta eficiência.</p>
                 </div>
-
-                <div class="glass-card about-me">
-                    <h2><span class="accent">></span> Soft Skills & Foco</h2>
-                    <ul class="custom-list">
-                        <li><span>✔</span> Aprendizado contínuo e rápido</li>
-                        <li><span>✔</span> Experiência com apresentações públicas</li>
-                        <li><span>✔</span> Foco em Mobile e Backend</li>
-                        <li><span>✔</span> Disciplina e organização</li>
-                        <li><span>✔</span> Trabalho em equipa</li>
-                        <li><span>✔</span> Orientação para metas</li>
-                        <li><span>✔</span> Foco em resultados</li>
-                    </ul>
+                <div class="glass-card">
+                    <h3 style="color: var(--accent); margin-bottom: 15px;">Longo Prazo</h3>
+                    <p>- Liderar transformações digitais em larga escala, focando em arquiteturas de microsserviços e inovação em geolocalização.</p>
+                    <p>- Abrir um consultoria digital especializada em transformar problemas em soluções tecnologicas, de forma profissional.</p>
                 </div>
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <a href="menu.html" class="menu-trigger" aria-label="Menu">
-                <span class="line"></span>
-                <span class="line"></span>
-            </a>
-        </main>
-    </div>
-
-    <script src="./scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

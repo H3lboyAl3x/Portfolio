@@ -4,68 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos | Edgar Alexandre</title>
-    <link rel="icon" type="image/png" href="./../src/icon/favicon.png">
-    <link rel="apple-touch-icon" href="./../src/icon/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/projetos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css"> <link rel="stylesheet" href="styles/projetos.css">
 </head>
 <body>
     <canvas id="canvas-dots"></canvas>
 
-    <main class="container">
-        <header class="page-header">
-            <h1 class="glitch" data-text="MEUS_PROJETOS">MEUS <span>PROJETOS</span></h1>
-            <p>// Repositórios GitHub & Soluções Comerciais</p>
-        </header>
+    <nav class="navbar">
+        <div class="logo">EDGAR<span>ALEXANDRE</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+        </ul>
+    </nav>
 
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img" style="background-image: url('./../src/image/p01.jpg');"></div>
-                <div class="project-info">
-                    <h3>Hábito App</h3>
-                    <p>Aplicativo mobile, focado em gerenciamento de hábitos, com notificações no horário, Armazenamento local, garante privacidade, desempenho.</p>
+    <main class="projects-vertical-stack">
+        
+        <section class="project-section reveal">
+            <div class="container project-flex">
+                <div class="project-content">
+                    <span class="project-number">01</span>
+                    <h2 class="project-title">Mind<span>Care</span></h2>
+                    <p class="project-tagline">// Ecossistema de Telemedicina para Psicologia</p>
+                    <p class="project-description">
+                        Uma solução robusta de saúde digital que conecta pacientes a profissionais da psicologia. O projeto foca na arquitetura de dados segura para prontuários, gestão de sessões em tempo real e uma interface que prioriza o bem-estar emocional. Desenvolvido com foco em escalabilidade horizontal.
+                    </p>
                     <div class="tech-stack">
-                        <span>React Native</span>
-                        <span>Node.js</span>
-                        <span>npm</span>
-                        <span>SQLite</span>
-                        <span>Notificações Locais</span>
+                        <span>Node.js</span><span>React Native</span><span>PostgreSQL</span><span>REST API</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/H3lboyAl3x/Habitos" class="btn-git">GitHub</a>
-                        <a href="https://github.com/H3lboyAl3x/Habitos/releases/download/Aplicativo/application-3b012234-199b-4b40-963e-8c42d81e7f15.apk" class="btn-demo">Live Demo</a>
+                    <div class="project-actions">
+                        <a href="https://github.com/H3lboyAl3x" class="btn-main">Analisar Repositório</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img" style="background-image: url('./../src/image/p02.jpg');"></div>
-                <div class="project-info">
-                    <h3>APPGestor</h3>
-                    <p>Aplicativo mobile, focado no controle de tempo de tarefas, gestão de pausas, organização visual das atividades e relatórios semanais.</p>
-                    <div class="tech-stack">
-                        <span>React Native</span>
-                        <span>Node.js</span>
-                        <span>npm</span>
-                        <span>SQLite</span>
-                        <span>Victory Native</span>
-                        <span>Áudio Locais</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/H3lboyAl3x/APPGestor" class="btn-git">GitHub</a>
-                        <a href="https://github.com/H3lboyAl3x/APPGestor/releases/download/app/application-7500279b-b909-4f1f-aa82-4645c83d68bf.apk" class="btn-demo">Live Demo</a>
-                    </div>
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1000" alt="MindCare preview">
                 </div>
             </div>
+        </section>
 
+        <section class="project-section reveal">
+            <div class="container project-flex reverse">
+                <div class="project-content">
+                    <span class="project-number">02</span>
+                    <h2 class="project-title">Encontra <span>Angola</span></h2>
+                    <p class="project-tagline">// Gamificação de Turismo e Cultura</p>
+                    <p class="project-description">
+                        Aplicação mobile inovadora desenhada para fomentar o turismo nacional através de gamificação. Utiliza geolocalização precisa para desbloqueio de pontos históricos e culturais, recompensando o usuário com pontos e conquistas, transformando a exploração cultural em uma experiência interativa e viciante.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Mobile SDK</span><span>Geolocalização</span><span>Gamificação</span><span>UI/UX</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/H3lboyAl3x" class="btn-main">Ver Documentação</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1000" alt="Encontra Angola preview">
+                </div>
             </div>
+        </section>
 
-        <a href="menu.html" class="menu-trigger">
-            <span class="line"></span>
-            <span class="line"></span>
-        </a>
+        <section class="project-section reveal">
+            <div class="container project-flex">
+                <div class="project-content">
+                    <span class="project-number">03</span>
+                    <h2 class="project-title">Hábito <span>App</span></h2>
+                    <p class="project-tagline">// Gestão de Performance Pessoal</p>
+                    <p class="project-description">
+                        Desenvolvido para otimizar a rotina diária, este app foca na persistência de dados local para garantir privacidade absoluta. Possui sistema de notificações inteligentes e dashboards de progresso, ajudando usuários a manterem a consistência em metas de longo prazo com desempenho fluido.
+                    </p>
+                    <div class="tech-stack">
+                        <span>React Native</span><span>SQLite</span><span>Local Storage</span><span>Analytics</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/H3lboyAl3x" class="btn-main">Ver Código Fonte</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000" alt="Hábito App preview">
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section reveal">
+            <div class="container project-flex reverse">
+                <div class="project-content">
+                    <span class="project-number">04</span>
+                    <h2 class="project-title">App <span>Gestor</span></h2>
+                    <p class="project-tagline">// Otimização de Tempo e Foco (Deep Work)</p>
+                    <p class="project-description">
+                        Ferramenta técnica para gerenciamento de ciclos de atividade e descanso. Inspirado em metodologias de produtividade, o app permite o monitoramento detalhado do tempo gasto em tarefas específicas, gerando relatórios de eficiência ideais para profissionais e estudantes que buscam alta performance.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Node.js</span><span>Task Management</span><span>Data Visualization</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/H3lboyAl3x" class="btn-main">Acessar Projeto</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?q=80&w=1000" alt="App Gestor preview">
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <script src="./scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
